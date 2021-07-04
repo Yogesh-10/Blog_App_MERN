@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Post.css'
 
 const Post = ({ img }) => {
@@ -7,20 +8,20 @@ const Post = ({ img }) => {
 			<div className='postInfo'>
 				<div className='postCats'>
 					<span className='postCat'>
-						<li className='link' to='/posts?cat=Music'>
+						<Link className='link' to='/posts?cat=Music'>
 							Music
-						</li>
+						</Link>
 					</span>
 					<span className='postCat'>
-						<li className='link' to='/posts?cat=Music'>
+						<Link className='link' to='/posts?cat=Music'>
 							Life
-						</li>
+						</Link>
 					</span>
 				</div>
 				<span className='postTitle'>
-					<li to='/post/abc' className='link'>
+					<Link to='/post/abc' className='link'>
 						Lorem ipsum dolor sit amet
-					</li>
+					</Link>
 				</span>
 				<hr />
 				<span className='postDate'>1 hour ago</span>
