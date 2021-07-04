@@ -13,17 +13,17 @@ const topbar = () => {
 				<ul className='topList'>
 					<li className='topListItem'>
 						<li className='link' to='/'>
-							HOME
+							Home
 						</li>
 					</li>
-					<li className='topListItem'>ABOUT</li>
-					<li className='topListItem'>CONTACT</li>
+					<li className='topListItem'>About</li>
+					<li className='topListItem'>Contact</li>
 					<li className='topListItem'>
 						<li className='link' to='/write'>
-							WRITE
+							Write
 						</li>
 					</li>
-					<li className='topListItem'>LOGOUT</li>
+					<li className='topListItem'>Logout</li>
 				</ul>
 			</div>
 			<div className='topRight'>Search</div>
