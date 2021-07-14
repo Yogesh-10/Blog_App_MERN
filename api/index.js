@@ -8,19 +8,19 @@ const userRoutes = require('./routes/userRoutes')
 const postRoutes = require('./routes/postRoutes')
 const categoryRoutes = require('./routes/categoriesRoutes')
 
-dotenv.config()
-
-connectDB()
-
 const app = express()
+
+dotenv.config()
 
 app.use(express.json())
 
 app.use('/images', express.static(path.join(__dirname, '/images')))
 
+connectDB()
+
 const storage = multer.diskStorage({
 	destination: (req, file, cb) => {
-		cb(null, 'image')
+		cb(null, 'images')
 	},
 	filename: (req, file, cb) => {
 		cb(null, req.body.name)

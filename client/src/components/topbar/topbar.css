@@ -6,14 +6,20 @@
 	top: 0;
 	display: flex;
 	align-items: center;
-	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	z-index: 999;
 }
+
 .topLeft,
 .topRight {
 	flex: 3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.topCenter {
+	flex: 6;
 }
 
 .topIcon {
@@ -28,10 +34,7 @@
 	height: 40px;
 	border-radius: 50%;
 	object-fit: cover;
-}
-
-.topCenter {
-	flex: 6;
+	cursor: pointer;
 }
 
 .topList {
@@ -44,8 +47,10 @@
 
 .topListItem {
 	margin-right: 20px;
-	font-size: 18px;
-	font-weight: 400;
+	font-size: 20px;
+	font-weight: 300;
+	cursor: pointer;
+	font-weight: 500;
 }
 
 .topSearchIcon {

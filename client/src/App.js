@@ -6,9 +6,11 @@ import Write from './components/pages/write/Write'
 import Topbar from './components/topbar/Topbar'
 import Settings from './components/pages/settings/Settings'
 import Single from './components/pages/single/Single'
+import { Context } from './context/Context'
+import { useContext } from 'react'
 
 const App = () => {
-	const user = true
+	const { user } = useContext(Context)
 	return (
 		<Router>
 			<Topbar />

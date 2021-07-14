@@ -17,7 +17,6 @@
 }
 
 .postCat {
-	font-family: 'Varela Round', sans-serif;
 	font-size: 11px;
 	color: #be9656;
 	line-height: 20px;
@@ -27,7 +26,6 @@
 }
 
 .postTitle {
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 	margin-top: 15px;
